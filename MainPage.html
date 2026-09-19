@@ -6,15 +6,13 @@
 <head>
 <title>hmmm</title>
 <link rel="stylesheet" href="style.css">
-<script src="thingyhere.js"></script> 
+<script src="thingyhere.js" defer></script> 
 </head>
 
 <header>
 <h1>THE PAGE...</h1>
 
-<!-- <nav class="navbar">
-<a href="bookRecs?.html">Well?</a>    
-</nav> -->
+<!-- Hmm maybe I should add this flag in somewhere: ctf{just_ch3ck!ng_7he_c0d3?} -->
 
 </header>
 
@@ -23,22 +21,22 @@
 <dev>
 <div class="container">
     <div class="tester" onclick=toggleOn(this)>
-        <span class="Preview">Click to Expand</span>
+        <span class="Preview"> Description (Click to Expand):</span>
         <p class="inner">This is One of many secrets,
-            on this page you will find many flags, CTF flags, 
+            on this page you will find many flags (CTF flags), 
             you're challenge is to find as many as you can.
-            There are #. Can you find them all? here is the first 
-            one: ctf{Gre@t_j0b_y0U_f0u^d_the_f!rst_0ne}.
+            There are # flags. Can you find them all? here is the first 
+            one: ctf{Gr3@t_j06_y0U_f0u^d_the_f!rst_0ne}.
         </p>
     </div>
     <div class="tester" onclick=toggleOn(this)>
         <span class="Preview">Hint 1</span>
-        <p class="inner">This is where hint 1 goes
+        <p class="inner">Flag One is in the description... you should already have it. Judging if you don't....
         </p>
     </div>
     <div class="tester" onclick=toggleOn(this)>
         <span class="Preview">Hint 2</span>
-        <p class="inner">This is where hint 2 goes
+        <p class="inner"> Check the comments???....
         </p>
     </div>
     <div class="tester" onclick=toggleOn(this)>
@@ -87,7 +85,30 @@
 
 
 
- <h2>Well Hello There</h2>
+
+
+<br><br><br><br><br><br><br>
+
+ <h2>Well hello there, you want to keep track of the flags already found? <br> 
+    Enter the flags in the text box below:</h2>
+<label for="flag">Enter the flag:</label>
+<input id="flag" for="flag" type="text" class="flagTextBox" placeholder="Enter the flag in here...">
+<p id="msg"></p>
+
+<h2>Flags Found</h2>
+
+<ul id="flagChecklist">
+    <li>
+        <input type="checkbox" id="flag1">
+        <label for="flag1">Flag #1</label>
+    </li>
+    <li>
+        <input type="checkbox" id="flag2">
+        <label for="flag1">Flag #2</label>
+    </li>
+</ul>
+
+
  <footer> Just checking you still locked in here. </footer>
  </dev>
 </body>
