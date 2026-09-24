@@ -8,16 +8,74 @@ body {
 header {
     font-family: monospace;
     color: rgb(34, 255, 0);
-    font-size: 200%;
-    align-items: center;
+    font-size: 30px;
+    text-shadow: 0 0 12px #40ff00;
 
 }
 
-
-.navbar a {
+.sidebar a {
     font-family: monospace;
     color: rgb(34, 255, 0);
+    font-size: 70%;
 }
+
+.menu-btn {
+    background-color: #000000;
+    font-family: monospace;
+    color: #40ff00;
+    padding: 10px 15px;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+
+}
+
+.menu-btn:hover {
+    background-color: #1a1d23;
+}
+
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    background-color: #000000;
+    padding-top: 50px;
+    z-index: 100%;
+    transition: left 0.3s ease-in-out;
+    box-shadow: 2px 0 5px #40ff00;
+}
+
+.sidebar.active {
+    left: 0;
+    /* Slides into view */
+}
+
+.sidebar .close-btn {
+    position: absolute;
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 36px;
+    color: #40ff00;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.sidebar-links a {
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #40ff00;
+    display: block;
+    transition: 0.2s;
+    padding-left: 20px;
+}
+
+
+
 
 
 
@@ -26,6 +84,7 @@ header {
     flex-wrap: wrap;
     gap: 20px;
     align-items: flex-start;
+
 
 }
 
@@ -42,6 +101,7 @@ header {
     transition: all 0.3s ease;
     overflow: visible;
     cursor: pointer;
+    min-width: 350px;
 
 
 }
@@ -143,7 +203,7 @@ p {
 }
 
 #flagChecklist input[type="checkbox"]:checked::after {
-    content: "❥";
+    content: "✔";
     color: black;
     font-size: 14px;
     font-weight: bold;
