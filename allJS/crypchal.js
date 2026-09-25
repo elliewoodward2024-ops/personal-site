@@ -34,6 +34,14 @@ const flags = [
     {
         number: 4,
         value: "ctf{@LwayS_n33d_a_c0mb0_!n_th3r3}"
+    },
+    {
+        number: 5,
+        value: "ctf{gotta_love_a_good_Caesar_salad}"
+    },
+    {
+        number: 6,
+        value: "ctf{hmm_this_is_a_new_one_even_for_me!}"
     }
 
 

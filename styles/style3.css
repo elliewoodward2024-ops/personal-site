@@ -48,6 +48,7 @@ header {
     border: none;
     transition: all 0.3s ease;
     border-radius: 10px;
+    font-size: large;
 
 }
 
@@ -94,18 +95,11 @@ header {
     text-shadow: 2px 0 5px #ffffff;
 }
 
-
-
-
-
-
 .container {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     align-items: flex-start;
-
-
 }
 
 
@@ -122,8 +116,6 @@ header {
     overflow: visible;
     cursor: pointer;
     min-width: 350px;
-
-
 }
 
 .inner {
@@ -137,12 +129,11 @@ header {
     opacity: 0;
     overflow: hidden;
     transition: all 0.3s ease;
-
 }
 
 .tester:hover {
     background-color: #1a1d23;
-    transform: translateY(-2px);
+
 }
 
 .tester.active {
@@ -159,11 +150,9 @@ header {
 .Preview {
     font-weight: 600;
     color: #00eaff;
-
 }
 
 footer {
-
     position: fixed;
     bottom: 3;
     text-align: center;

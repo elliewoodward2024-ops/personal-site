@@ -49,6 +49,7 @@ header {
     border: none;
     transition: all 0.3s ease;
     border-radius: 10px;
+    font-size: large;
 
 }
 
