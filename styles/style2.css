@@ -180,6 +180,16 @@ header {
     transform: translateY(-2px);
 }
 
+.tester2:hover {
+    background-color: #1a1d23;
+
+}
+
+.tester2.active {
+    background-color: #000000;
+    color: #ff0099;
+}
+
 .tester.active {
     background-color: #000000;
     color: #ff0099;

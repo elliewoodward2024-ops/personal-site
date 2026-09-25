@@ -22,6 +22,18 @@ const flags = [
     {
         number: 1,
         value: "ctf{Gr3@t_j06_y0U_f0u^d_the_f!rst_0ne}"
+    },
+    {
+        number: 2,
+        value: "ctf{7h3_b@s!cs_of_b@se64}"
+    },
+    {
+        number: 3,
+        value: "ctf{y0ur_f!r$t_MD5_h@sh}"
+    },
+    {
+        number: 4,
+        value: "ctf{@LwayS_n33d_a_c0mb0_!n_th3r3}"
     }
 
 
