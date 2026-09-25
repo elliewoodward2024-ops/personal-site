@@ -126,10 +126,24 @@ header {
     overflow: visible;
     cursor: pointer;
     min-width: 350px;
+    min-height: 100px;
+}
 
-
+.tester2 {
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid #ff0099;
+    border-radius: 8px;
+    padding: 10px;
+    max-width: 300;
+    transition: all 0.3s ease;
+    overflow: visible;
+    cursor: pointer;
+    min-width: 250px;
 
 }
+
+
 
 .inner {
     width: 100%;
@@ -145,6 +159,22 @@ header {
 
 }
 
+.inner-hint {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 10px 0 0 0;
+    padding: 0;
+    background-color: black;
+
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+
+}
+
+
+
 .tester:hover {
     background-color: #1a1d23;
     transform: translateY(-2px);
@@ -152,20 +182,32 @@ header {
 
 .tester.active {
     background-color: #000000;
-    border-color: #ff0099;
+    color: #ff0099;
 }
 
 .tester.active .inner {
     max-height: 300px;
     opacity: 1;
+    margin: 10px 0;
     padding: 20px;
 }
+
+.tester2.active>.inner-hint {
+    max-height: 100px;
+    opacity: 1;
+    margin-top: 10px;
+}
+
 
 .Preview {
     font-weight: 600;
     color: #ff0099;
 
 }
+
+
+
+
 
 footer {
 

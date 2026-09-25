@@ -27,9 +27,12 @@ const flags = [
 
 ];
 
-function toggleOn(element) {
+function toggleOn(element, event) {
+    event.stopPropagation();
     element.classList.toggle('active');
 }
+
+
 
 let typingTimer;
 
