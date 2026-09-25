@@ -17,9 +17,6 @@ document.addEventListener('click', (event) => {
 }
 );
 
-
-
-
 const flags = [
     {
         number: 1,

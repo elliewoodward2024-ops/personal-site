@@ -19,31 +19,33 @@
 }
 
 
+
+
 body {
     background-color: black;
     font-family: monospace;
-    color: #40ff00;
+    color: #ff0099;
     padding-left: 3%;
 }
 
 header {
     font-family: monospace;
-    color: #40ff00;
+    color: #ff0099;
     font-size: 30px;
-    text-shadow: 0 0 12px #40ff00;
+    text-shadow: 0 0 12px #ff0099;
 
 }
 
 .sidebar a {
     font-family: monospace;
-    color: #ffffff;
+    color: #ff0099;
     font-size: 70%;
 }
 
 .menu-btn {
     background-color: #000000;
     font-family: monospace;
-    color: #40ff00;
+    color: #ff0099;
     padding: 10px 15px;
     cursor: pointer;
     border: none;
@@ -71,6 +73,7 @@ header {
 
 .sidebar.active {
     left: 0;
+
 }
 
 .sidebar .close-btn {
@@ -115,7 +118,7 @@ header {
 
     align-items: center;
     background-color: rgb(0, 0, 0);
-    border: 1px solid rgb(0, 255, 42);
+    border: 1px solid #ff0099;
     border-radius: 8px;
     padding: 10px;
     max-width: 350;
@@ -123,6 +126,7 @@ header {
     overflow: visible;
     cursor: pointer;
     min-width: 350px;
+
 
 
 }
@@ -148,7 +152,7 @@ header {
 
 .tester.active {
     background-color: #000000;
-    border-color: #40ff00;
+    border-color: #ff0099;
 }
 
 .tester.active .inner {
@@ -159,7 +163,7 @@ header {
 
 .Preview {
     font-weight: 600;
-    color: #2bff00;
+    color: #ff0099;
 
 }
 
@@ -176,7 +180,7 @@ footer {
 
     background-color: #000000;
     font-family: monospace;
-    color: #2bff00;
+    color: #ff0099;
     border: #1d1d1d;
     transition: all 0.3ms ease;
     width: 400px;
@@ -194,7 +198,7 @@ footer {
 
 p {
 
-    color: #2bff00;
+    color: #ff0099;
     font-family: monospace;
 }
 
@@ -211,7 +215,7 @@ p {
     appearance: none;
     width: 18px;
     height: 18px;
-    border: 1px solid #40ff00;
+    border: 1px solid #ff0099;
     background-color: black;
     cursor: pointer;
     vertical-align: middle;
@@ -219,7 +223,7 @@ p {
 }
 
 #flagChecklist input[type="checkbox"]:checked {
-    background-color: #40ff00;
+    background-color: #ff0099;
     position: relative;
 }
 
@@ -234,7 +238,7 @@ p {
 }
 
 #flagChecklist input[type="checkbox"]:checked {
-    background-color: #40ff00;
-    box-shadow: 0 0 8px #40ff00;
+    background-color: #ff0099;
+    box-shadow: 0 0 8px #ff0099;
     position: relative;
 }
