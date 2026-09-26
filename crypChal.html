@@ -31,15 +31,17 @@
 <div class="container">
     <div class="tester" onclick="toggleOn(this, event)">
         <span class="Preview"> Description (Click to Expand):</span>
-        <p class="inner">This is one of many secrets.
-            On this page you will find many flags (CTF flags), 
-            you're challenge is to find as many as you can. All these challenges
-            are based on cryptography. There are # flags. 
-            Can you find them all? here is the first 
-            one: ctf{Gr3@t_j06_y0U_f0u^d_the_f!rst_0ne}.
+        <a href="#" onclick="toggleOff(this, event); return false" class="close-btn">&times;</a>
+        <p class="inner">
+            For this set of challenges they will cover a range of different 
+            Cryptography problems. Do your best to find all the flags! <br><br>
+            Reminder: You have to close the challenges though 'x' button, 
+            but you can click anywhere on hints to close them.
+            <br><br>
+            Anyway here first flag: ctf{Gr3@t_j06_y0U_f0u^d_the_f!rst_0ne}.
         </p>
         <br>
-        <div class="tester2" onclick="toggleOn(this, event)">
+        <div class="tester2" onclick="toggleOn2(this, event)">
             <span class="Preview">Hint 1</span>
                 <p class="inner-hint">Flag One is in the description... you should already have it. Judging if you don't....</p>
         </div>
@@ -51,10 +53,11 @@
 
     <div class="tester" onclick= "toggleOn(this, event)" >
         <span class="Preview">Challenge 2</span>
+        <a href="#" onclick="toggleOff(this, event); return false" class="close-btn2">&times;</a>
         <p class="inner"> Y3RmezdoM19iQHMhY3Nfb2ZfYkBzZTY0fQ== 
         </p>
         <br>
-            <div class="tester2" onclick="toggleOn(this, event)">
+            <div class="tester2" onclick="toggleOn2(this, event)">
                     <span class="Preview">Hint 2</span>
                     <p class="inner-hint"> Do you know base64? </p>
             </div>
@@ -66,9 +69,10 @@
 
     <div class="tester" onclick="toggleOn(this, event)">
         <span class="Preview">Challenge 3</span>
+        <a href="#" onclick="toggleOff(this, event); return false" class="close-btn2">&times;</a>
         <p class="inner"> c849f77df8a81fc6d3dd5a148040970f</p>
         <br>
-            <div class="tester2" onclick="toggleOn(this, event)">
+            <div class="tester2" onclick="toggleOn2(this, event)">
                     <span class="Preview">Hint 3</span>
                     <p class="inner-hint">What is a unique 32-character hexadecimal string know as?</p>
             </div>
@@ -76,9 +80,10 @@
     
     <div class="tester" onclick="toggleOn(this, event)">
         <span class="Preview">Challenge 4</span>
-        <p class="inner"> <a href="/other/Chal4.txt" target="_blank">Open The Challenge</a> </p>
+        <a href="#" onclick="toggleOff(this, event); return false" class="close-btn2">&times;</a>
+        <p class="inner"> <a href="/other/Chal4.txt" target="_blank">Click Here To Open The Challenge</a> </p>
         <br>
-            <div class="tester2" onclick="toggleOn(this, event)">
+            <div class="tester2" onclick="toggleOn2(this, event)">
                     <span class="Preview">Hint 4</span>
                     <p class="inner-hint">You may need to use your given resources along with hex, binary, base64, base32, and Octal.</p>
             </div>
@@ -86,9 +91,10 @@
 
     <div class="tester" onclick="toggleOn(this, event)">
         <span class="Preview">Challenge 5</span>
+        <a href="#" onclick="toggleOff(this, event); return false" class="close-btn2">&times;</a>
         <p class="inner">ofr{saffm_xahq_m_saap_Omqemd_emxmp}</p>
         <br>
-            <div class="tester2" onclick="toggleOn(this, event)">
+            <div class="tester2" onclick="toggleOn2(this, event)">
                     <span class="Preview">Hint 5</span>
                     <p class="inner-hint"> Caesar salad anyone?</p>
             </div>
@@ -97,9 +103,10 @@
 
     <div class="tester" onclick="toggleOn(this, event)">
         <span class="Preview">Challenge 6</span>
+        <a href="#" onclick="toggleOff(this, event); return false" class="close-btn2">&times;</a>
         <p class="inner">yxn{ypi_xpzv_ew_i_ehs_svv_hriv_wrn_qm!}</p>
         <br>
-            <div class="tester2" onclick="toggleOn(this, event)">
+            <div class="tester2" onclick="toggleOn2(this, event)">
                     <span class="Preview">Hint 6</span>
                     <p class="inner-hint">Vigenere is such a *weird* word</p>
             </div>
@@ -107,10 +114,11 @@
 
     <div class="tester" onclick="toggleOn(this, event)">
         <span class="Preview">Challenge 7</span>
+        <a href="#" onclick="toggleOff(this, event); return false" class="close-btn2">&times;</a>
         <p class="inner">This is where hint 7 goes
         </p>
         <br>
-            <div class="tester2" onclick="toggleOn(this, event)">
+            <div class="tester2" onclick="toggleOn2(this, event)">
                     <span class="Preview">Hint 7</span>
                     <p class="inner-hint"> Do you know base64? </p>
             </div>
@@ -118,9 +126,10 @@
 
     <div class="tester" onclick="toggleOn(this, event)">
         <span class="Preview">Challenge 8</span>
+        <a href="#" onclick="toggleOff(this, event); return false" class="close-btn2">&times;</a>
         <p class="inner">This is where hint 8 goes </p>
         <br>
-            <div class="tester2" onclick="toggleOn(this, event)">
+            <div class="tester2" onclick="toggleOn2(this, event)">
                     <span class="Preview">Hint 8</span>
                     <p class="inner-hint"> Do you know base64? </p>
             </div>
@@ -129,9 +138,10 @@
 
      <div class="tester" onclick="toggleOn(this, event)">
         <span class="Preview">Challenge 9</span>
+        <a href="#" onclick="toggleOff(this, event); return false" class="close-btn2">&times;</a>
         <p class="inner">This is where hint 9 goes </p>
         <br>
-            <div class="tester2" onclick="toggleOn(this, event)">
+            <div class="tester2" onclick="toggleOn2(this, event)">
                     <span class="Preview">Hint 9</span>
                     <p class="inner-hint"> Do you know base64? </p>
             </div>
@@ -140,10 +150,35 @@
 
     <div class="tester" onclick="toggleOn(this, event)">
         <span class="Preview">Challenge 10</span>
+        <a href="#" onclick="toggleOff(this, event); return false" class="close-btn3">&times;</a>
         <p class="inner">This is where hint 10 goes </p>
         <br>
-            <div class="tester2" onclick="toggleOn(this, event)">
+            <div class="tester2" onclick="toggleOn2(this, event)">
                     <span class="Preview">Hint 10</span>
+                    <p class="inner-hint">Hints for the numbers may be hidden in past challenges or 
+                        around the cite. Look for the numbers to use to  </p>
+            </div>
+    </div>
+
+    <div class="tester" onclick="toggleOn(this, event)">
+        <span class="Preview">Challenge 11</span>
+        <a href="#" onclick="toggleOff(this, event); return false" class="close-btn3">&times;</a>
+        <p class="inner">This is where hint 11 goes </p>
+        <br>
+            <div class="tester2" onclick="toggleOn2(this, event)">
+                    <span class="Preview">Hint 11</span>
+                    <p class="inner-hint">Hints for the numbers may be hidden in past challenges or 
+                        around the cite. Look for the numbers to use to  </p>
+            </div>
+    </div>
+
+    <div class="tester" onclick="toggleOn(this, event)">
+        <span class="Preview">Challenge 12</span>
+        <a href="#" onclick="toggleOff(this, event); return false" class="close-btn3">&times;</a>
+        <p class="inner">This is where hint 12 goes </p>
+        <br>
+            <div class="tester2" onclick="toggleOn2(this, event)">
+                    <span class="Preview">Hint 12</span>
                     <p class="inner-hint">Hints for the numbers may be hidden in past challenges or 
                         around the cite. Look for the numbers to use to  </p>
             </div>
@@ -165,11 +200,12 @@
 
 <h2>Flags Found</h2>
 
-<ul id="flagChecklist" >
-    <li>
+
+<ul id="flagChecklist" class="flagChecklist" >
+     <li>
         <input type="checkbox" id="flag1">
         <label for="flag1">Flag #1</label>
-    </li>
+        </li>
     <li>
         <input type="checkbox" id="flag2">
         <label for="flag2">Flag #2</label>
@@ -190,10 +226,36 @@
         <input type="checkbox" id="flag6">
         <label for="flag6">Flag #6</label>
     </li>
+       <li>
+        <input type="checkbox" id="flag7">
+        <label for="flag7">Flag #7</label>
+    </li>
+    <li>
+        <input type="checkbox" id="flag8">
+        <label for="flag8">Flag #8</label>
+    </li>
+    <li>
+        <input type="checkbox" id="flag9">
+        <label for="flag9">Flag #9</label>
+    </li>
+       <li>
+        <input type="checkbox" id="flag2">
+        <label for="flag2">Flag #10</label>
+    </li>
+    <li>
+        <input type="checkbox" id="flag11">
+        <label for="flag11">Flag #11</label>
+    </li>
+    <li>
+        <input type="checkbox" id="flag12">
+        <label for="flag12">Flag #12</label>
+    </li>
 </ul>
 
+<br> <br>
 
- <footer> Just checking you still locked in here. </footer>
+
+
  </dev>
 </body>
 

@@ -4,7 +4,7 @@ const foundFlags = new Set();
 const menuBtn = document.getElementById('menu-btn');
 const closeBtn = document.getElementById('close-btn');
 const sidebar = document.getElementById('sidebar');
-
+const closeBtn2 = document.getElementById('close-btn2');
 
 
 menuBtn.addEventListener('click', () => { sidebar.classList.add('active'); });
@@ -47,14 +47,28 @@ const flags = [
 
 ];
 
+
 function toggleOn(element, event) {
+    event.stopPropagation();
+    element.classList.add('active');
+}
+function toggleOff(element, event) {
+    event.stopPropagation();
+    const parentContainer = element.closest('.tester');
+    if (parentContainer) {
+        parentContainer.classList.remove('active');
+    }
+}
+
+function toggleOn2(element, event) {
     event.stopPropagation();
     element.classList.toggle('active');
 }
 
 
 
-let typingTimer;
+
+
 
 function checkIfFlag(value) {
     const flag = flags.find(item => item.value === value);
