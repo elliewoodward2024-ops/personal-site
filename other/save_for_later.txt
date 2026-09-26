@@ -40,3 +40,65 @@ flagChecker.addEventListener("keydown", function (event) {
 
     }
 });
+
+
+
+
+    try {
+        const response =
+            await fetch(_URL, {
+
+                method: "POST",
+
+                header: {
+                    "Content-Type":
+                        "application/json"
+                },
+
+                body: JSON.stringify({
+
+                    category: category,
+                    flag: value,
+
+                })
+
+            });
+
+        const result =
+            await response.json();
+
+        if (!result.correct) {
+            outputThing.textContent =
+                "No, this is not a flag, good try.";
+            return;
+        }
+        
+        foundFlags.add(number);
+        outputThing.textContent = `You found Flag #${number}!`;
+
+        const checkbox =
+            document.querySelector(
+                `#flag${number}`
+            );
+
+        if (checkbox) {
+            checkbox.checked = true;
+        }
+
+        flagChecker.value = "";
+
+    }
+
+    catch (error) {
+        console.error(error);
+        outputThing.textContent = "Could not connect to the flag checker";
+
+    }
+}
+
+flagChecker.addEventListener("keydown", function (event) {
+    if (event.key === "Enter") {
+
+        handleInput();
+
+    }
