@@ -1,0 +1,42 @@
+function checkIfFlag(value) {
+    const flag = flags.find(item => item.value === value);
+
+    if (!flag) {
+        return null;
+    }
+
+    return flag;
+}
+
+function handleInput() {
+    const value = flagChecker.value;
+    const flag = checkIfFlag(value);
+
+
+    if (!flag) {
+        outputThing.textContent = "No this is not a flag, good try.";
+        return;
+    }
+    if (foundFlags.has(flag.number)) {
+        outputThing.textContent = `You already found Flag #${flag.number}.`;
+        return;
+    }
+
+    foundFlags.add(flag.number);
+
+    outputThing.textContent = `You found Flag #${flag.number}!`;
+
+    document.querySelector(`#flag${flag.number}`).checked = true;
+
+    flagChecker.value = "";
+
+}
+
+
+flagChecker.addEventListener("keydown", function (event) {
+    if (event.key === "Enter") {
+
+        handleInput();
+
+    }
+});
